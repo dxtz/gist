@@ -9,8 +9,8 @@ js判断函数是否存在
 ------------------
 ```javascript
     if ( typeof funcName === "function" ) {
-        alert("is function");
+        alert("is function or exist");
     } else {
-        alert("isn't function");
+        alert("isn't function or not exist");
     }
 ```
