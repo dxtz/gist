@@ -14,3 +14,10 @@ js判断函数是否存在
         alert("isn't function or not exist");
     }
 ```
+
+php获得上一个月有多少天
+```php
+    echo date('t', strtotime('last month'));
+    或者
+    echo date('t', strtotime('-1 month'));
+```
