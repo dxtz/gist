@@ -22,3 +22,8 @@ php获得上一个月有多少天
     //或者
     echo date('t', strtotime('-1 month'));
 ```
+
+css的box-shadow
+-------------------
+**外阴影**: box-shadow: X Y Spx Rpx color; (*X轴 Y轴 阴影半径 阴影模糊值 阴影颜色*)  
+**内阴影**: box-shadow: X Y Spx Rpx color inset; (比外阴影多一个属性`inset`)
