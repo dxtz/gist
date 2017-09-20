@@ -30,7 +30,7 @@ css的box-shadow
 还可以设置多重阴影，例如：
 ```CSS
 box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5),
-            -4px 0 0 0 #000000,
+            -4px 0 0 0 #000,
             0 6px 4px 0 red,
             0 0 5px 5px green inset;
 ```
