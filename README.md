@@ -27,3 +27,11 @@ css的box-shadow
 -------------------
 **外阴影**: box-shadow: X Y Spx Rpx color; (*X轴 Y轴 阴影半径 阴影模糊值 阴影颜色*)  
 **内阴影**: box-shadow: X Y Spx Rpx color inset; (比外阴影多一个属性`inset`)
+还可以设置多重阴影，例如：
+```CSS
+box-shadow: 0 0 8px 2px rgba(0, 0, 0, .5),
+            -4px 0 0 0 #000,
+            0 6px 4px 0 red,
+            0 0 5px 5px green inset;
+```
+`box-shadow`使用于盒模型，设置文字阴影可以使用`text-shadow`，使用方法与`box-shadow`一致
