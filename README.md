@@ -35,3 +35,15 @@ box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5),
             0 0 5px 5px green inset;
 ```
 `box-shadow`使用于盒模型，设置文字阴影可以使用`text-shadow`，使用方法与`box-shadow`一致
+
+css更改伪元素的值(::after, ::before)
+--------------
+```html
+<div class="class" data-value="test"></div>
+```
+```css
+.class::before {
+    content: attr(data-value);
+}
+// 伪元素的值为："test"
+```
