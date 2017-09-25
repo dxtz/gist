@@ -48,7 +48,9 @@ css更改伪元素的值(::after, ::before)
 // 伪元素的值为："test"
 ```
 
+
 禁止屏幕滑动
+----------------
 ```JS
 var mo = function(e){e.preventDefault();};
 function stop() {  //禁止
@@ -60,3 +62,18 @@ function move() {   //取消禁止
     document.removeEventListener('touchmove', mo, false);
 }
 ```
+
+另一种禁止滑动的方法
+-------------------
+```JS
+var scrollTop;
+// 禁止滑动
+scrollTop = document.scrollingElement.scrollTop;
+document.body.style.position = 'fixed';
+document.body.style.top = -scrollTop + 'px';
+
+// 取消禁止
+document.body.style.position = '';
+document.scrollingElement.scrollTop = scrollTop;
+```
+
