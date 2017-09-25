@@ -47,3 +47,16 @@ css更改伪元素的值(::after, ::before)
 }
 // 伪元素的值为："test"
 ```
+
+禁止屏幕滑动
+```JS
+var mo = function(e){e.preventDefault();};
+function stop() {  //禁止
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('touchmove', mo, false);
+}
+function move() {   //取消禁止
+    document.body.style.overflow = '';
+    document.removeEventListener('touchmove', mo, false);
+}
+```
