@@ -77,3 +77,9 @@ document.body.style.position = '';
 document.scrollingElement.scrollTop = scrollTop;
 ```
 
+简单设置跨域(Nginx)
+----------------
+```
+add_header Access-Control-Allow-Origin *; //(*可设置具体IP地址)
+add_header Access-Control-Allow-Methods GET,POST,DELETE,OPTIONS,PUT; //也可不加上这行
+```
