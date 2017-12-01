@@ -83,3 +83,25 @@ document.scrollingElement.scrollTop = scrollTop;
 add_header Access-Control-Allow-Origin *; //(*可设置具体IP地址)
 add_header Access-Control-Allow-Methods GET,POST,DELETE,OPTIONS,PUT; //也可不加上这行
 ```
+
+VUE-ROUTE-TITLE
+----------------------
+```JS
+let setDocumentTitle = function (title) {
+  document.title = title
+  let ua = navigator.userAgent
+  if (/\bMicroMessenger\/([\d.]+)/.test(ua) && /ip(hone|od|ad)/i.test(ua)) {
+    var i = document.createElement('iframe')
+    i.src = '/favicon.ico'
+    i.style.display = 'none'
+    i.onload = function () {
+      setTimeout(function () {
+        i.remove()
+      }, 9)
+    }
+    document.body.appendChild(i)
+  }
+}
+router.afterEach(routes => {
+  typeof routes.meta.title !== undefined && setDocumentTitle(routes.meta.title)
+})
