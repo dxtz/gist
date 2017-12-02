@@ -111,9 +111,9 @@ js 判断userAgent
 ```JS
 var ua = navigator.userAgent.toLowerCase() || window.navigator.userAgent.toLowerCase();
     //判断user-agent
-    var isWX = /MicroMessenger/i.test(ua), //微信端
-        isIOS = /(iPhone|iPad|iPod|iOS)/i.test(ua), //苹果家族
-        isAndroid = /(android|nexus)/i.test(ua), //安卓家族
-        isWindows = /(Windows Phone|windows[\s+]phone)/i.test(ua), //微软家族
-        isBlackBerry = /BlackBerry/i.test(ua); //黑莓家族
+var isWX = /MicroMessenger/i.test(ua), //微信端
+    isIOS = /(iPhone|iPad|iPod|iOS)/i.test(ua), //苹果家族
+    isAndroid = /(android|nexus)/i.test(ua), //安卓家族
+    isWindows = /(Windows Phone|windows[\s+]phone)/i.test(ua), //微软家族
+    isBlackBerry = /BlackBerry/i.test(ua); //黑莓家族
 ```
