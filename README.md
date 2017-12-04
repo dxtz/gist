@@ -117,3 +117,5 @@ var isWX = /MicroMessenger/i.test(ua), //微信端
     isWindows = /(Windows Phone|windows[\s+]phone)/i.test(ua), //微软家族
     isBlackBerry = /BlackBerry/i.test(ua); //黑莓家族
 ```
+
+岁月唯善润砾成珠
