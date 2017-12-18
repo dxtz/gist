@@ -119,3 +119,11 @@ var isWX = /MicroMessenger/i.test(ua), //微信端
 ```
 
 岁月唯善润砾成珠
+
+保持SVN仓库结构只checkout部分子目录
+```
+# 先checkout空目录
+svn co --depth empty svnLocation localDir
+
+# 对需要的子目录递归checkout
+svn update --set-depth infinity localDir/data
