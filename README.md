@@ -135,4 +135,4 @@ svn update --set-depth infinity localDir/data
 addEventListener的第三个参数
 --------------------------------
 addEventListener(event, func, boolean);
-这个函数的第三个参数叫做useCapture（使用捕获）,是一个布尔值(true or false)，如果为true的话浏览器会使用Capture方式，false的话是Bubbling，通常建议是false
+        这个函数的第三个参数叫做useCapture（使用捕获）,是一个布尔值(true or false)如果为true的话浏览器会使用Capture方式，false的话是Bubbling，通常建议是false
